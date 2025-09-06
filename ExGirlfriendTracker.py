@@ -6,13 +6,13 @@ from datetime import datetime
 
 driver = webdriver.Chrome()
 
-USERNAME = ""
-PASSWORD = ""
-EX_PROFILE = "" 
+USERNAME = "" #eg:- cristiano
+PASSWORD = "" #eg:- cris123
+EX_PROFILE = "" #(url)
 CSV_FILE = "ex_tracker_log.csv"
-SENDER_EMAIL = ""
-SENDER_PASS = ""
-RECEIVER_EMAIL = "ke7inpimenta@gmail.com"
+SENDER_EMAIL = "" #dummy email (only gmail)
+SENDER_PASS = "" #password
+RECEIVER_EMAIL = "ke7inpimenta@gmail.com" #(email you want to recieve alerts on)
 
 def clean_number(text):
     text = text.replace(",", "").strip()
@@ -52,7 +52,7 @@ driver.implicitly_wait(7)
 
 stats = driver.find_elements("css selector", "header section ul li span span")
 
-post = stats[0].text if len(stats) > 0 else "0"
+post = stats[0].text if len(stats) > 0 else "0" #inst changes html so sometimes [0,1,2] sometimes [0,2,4]
 follower = stats[2].text if len(stats) > 2 else "0"
 followin = stats[4].text if len(stats) > 4 else "0"
 
@@ -110,4 +110,4 @@ if messages:
 else:
     print("First run, no previous data.")
 
-driver.quit()
+driver.quit()#you can schedule this script on a cloud platform and set daily alerts automating it
