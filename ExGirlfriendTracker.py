@@ -110,4 +110,4 @@ if messages:
 else:
     print("First run, no previous data.")
 
-driver.quit()#you can schedule this script on a cloud platform and set daily alerts automating it
+driver.quit()#you can schedule this script on a cloud platform and set daily alerts automating it for daily updates
