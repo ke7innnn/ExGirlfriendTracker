@@ -11,7 +11,7 @@ PASSWORD = "" #eg:- cris123
 EX_PROFILE = "" #(url)
 CSV_FILE = "ex_tracker_log.csv"
 SENDER_EMAIL = "" #dummy email (only gmail)
-SENDER_PASS = "" #password
+SENDER_PASS = "" #app pass,not password 
 RECEIVER_EMAIL = "ke7inpimenta@gmail.com" #(email you want to recieve alerts on)
 
 def clean_number(text):
