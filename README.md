@@ -1,4 +1,4 @@
-# Instagram ExGirlfriend Tracker
+# Instagram Tracker
 
 A Python bot that tracks Instagram account statistics daily and sends email alerts when followers change. The bot logs posts, followers, and following counts in a CSV file and notifies you via email if there’s any gain or loss in followers and following.
 
